@@ -1,0 +1,9 @@
+.costs {
+  padding: 1rem;
+  background-color: #e8ecef;
+  margin: 2rem auto;
+  width: 70rem;
+  max-width: 95%;
+  border: 1px solid #b6babd;
+  border-radius: 10px;
+}

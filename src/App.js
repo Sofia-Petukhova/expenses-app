@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Costs from './components/Costs/Costs'
+import NewCost from './components/NewCost/NewCost';
 
-function App() {
+const App = () => {
+  const costs = [
+    { date: new Date(2024, 3, 12), description: "Ноутбук", price: 799.99 },
+    { date: new Date(2024, 11, 7), description: "Телефон", price: 299.99 },
+    { date: new Date(2024, 5, 31), description: "Ипотека", price: 279.99 },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NewCost/>
+     <Costs costs={costs}/>
     </div>
   );
-}
+};
 
 export default App;
