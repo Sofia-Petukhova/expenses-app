@@ -1,9 +1,35 @@
+import React, { useState } from "react";
 import CostForm from "./CostForm/CostForm";
+import Button from "../Button/Button";
 
-const NewCost = () => {
+const NewCost = ({ onAddCost }) => {
+  const [isCansel, setIsCansel] = useState(true);
+  const handleCansel = () => {
+    setIsCansel(true);
+  };
+  const handleAddNewCost = () => {
+    setIsCansel(false);
+  };
+  const handleSaveCostData = (costData) => {
+    const costDataWithId = {
+      ...costData,
+      id: Math.random().toString(),
+    };
+    onAddCost(costDataWithId);
+    setIsCansel(true);
+  };
+
   return (
     <div className="new-cost">
-      <CostForm />
+      {isCansel ? (
+        <Button
+          type="button"
+          text="Добавить новый расход"
+          onClick={handleAddNewCost}
+        />
+      ) : (
+        <CostForm onSaveCostData={handleSaveCostData} onCancel={handleCansel} />
+      )}
     </div>
   );
 };
