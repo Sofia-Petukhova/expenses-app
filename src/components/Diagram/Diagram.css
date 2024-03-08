@@ -1,7 +1,8 @@
 .diagram {
   padding: 1rem;
   border-radius: 12px;
-  background-color: #ddd5b9;
+  background-color: #b1b6ba;
+  border: 1px solid #919395;
   text-align: center;
   display: flex;
   justify-content: space-around;

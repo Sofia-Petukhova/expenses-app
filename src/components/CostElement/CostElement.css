@@ -5,7 +5,7 @@
   padding: 0.5rem;
   margin: 1rem 0;
   background-color: #b1b6ba;
-  border: 1px solid #8f9294;
+  border: 1px solid #919395;
   border-radius: 10px;
 }
 
@@ -17,7 +17,7 @@
   flex-flow: column-reverse;
   justify-content: flex-start;
   flex: 1;
-  color: #fefae1;
+  color: #f6f6f6;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -27,13 +27,13 @@
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  color: #fefae1;
+  color: #f6f6f6;
 }
 
 .cost-elem__price {
   font-size: 1rem;
   font-weight: bold;
-  color: #fefae1;
+  color: #f6f6f6;
   background-color: #8f9294;
   border: 1px solid white;
   padding: 0.5rem;
@@ -57,14 +57,3 @@
     padding: 0.5rem 1.5rem;
   }
 }
-
-/*background-color: #8fbfe7;*/
-/*.cost-elem__price:hover {
-  background-color: #7a7c7e;
-  cursor: pointer;
-}
-
-.cost-elem__price:active {
-  background-color: #707274;
-  cursor: pointer;
-}*/

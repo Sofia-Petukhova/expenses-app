@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CostForm from "./CostForm/CostForm";
 import Button from "../Button/Button";
+import "./NewCost.css";
 
 const NewCost = ({ onAddCost }) => {
   const [isCansel, setIsCansel] = useState(true);
@@ -18,7 +19,7 @@ const NewCost = ({ onAddCost }) => {
     onAddCost(costDataWithId);
     setIsCansel(true);
   };
-
+ 
   return (
     <div className="new-cost">
       {isCansel ? (

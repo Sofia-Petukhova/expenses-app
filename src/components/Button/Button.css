@@ -2,18 +2,20 @@
   font: inherit; 
   cursor: pointer;
   padding: 0.7rem;
-  color: #fefae1;
+  color: #f6f6f6;
   background-color: #8f9294;
-  border: 1px solid white;
+  border: 1px solid rgb(192, 190, 190);
+  padding: 0.5rem;
   border-radius: 10px;
+  margin-right: 5px;
 }
 
 .button:hover {
-  background-color: #868889;
+  background-color: #7a7d7e;
   cursor: pointer;
 }
 
 .button:active {
-  background-color: #707274;
+  background-color: rgb(106, 108, 108);
   cursor: pointer;
 }

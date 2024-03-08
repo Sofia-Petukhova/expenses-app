@@ -1,16 +1,17 @@
 import "./Diagram.css";
 import DiagramBar from "./DiagramBar/DiagramBar";
 
-const Diagram = ({ diagramCosts, maxValue }) => {
-  const datas = diagramCosts.map((cost) => )
+const Diagram = ({dataSets}) => {
+  const dataSetsValues = dataSets.map(dataSet => dataSet.value)
+  const maxMonthCosts = Math.max(...dataSetsValues);
   return (
     <div className="diagram">
-      {datas.map((data) => (
+      {dataSets.map((dataSet) => (
         <DiagramBar
-          key={data.id}
-          value={data.value}
-          maxValue={maxValue}
-          label={data}
+          key={dataSet.label}
+          value={dataSet.value}
+          maxValue={maxMonthCosts}
+          label={dataSet.label}
         />
       ))}
     </div>

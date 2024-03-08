@@ -4,7 +4,7 @@ import NewCost from "./components/NewCost/NewCost";
 const costs = [
   {
     id: "c1",
-    date: new Date(2021, 0, 12),
+    date: new Date(2023, 0, 12),
     description: "Ноутбук",
     price: 300,
   },
@@ -16,9 +16,9 @@ const costs = [
   },
   {
     id: "c3",
-    date: new Date(2021, 2, 31),
-    description: "Ипотека",
-    price: 2000,
+    date: new Date(2024, 2, 31),
+    description: "Квартира",
+    price: 20000,
   },
   {
     id: "c4",
@@ -28,7 +28,7 @@ const costs = [
   },
   {
     id: "c5",
-    date: new Date(2021, 3, 19),
+    date: new Date(2023, 3, 19),
     description: "Сковородка",
     price: 450,
   },
@@ -58,7 +58,7 @@ const costs = [
   },
   {
     id: "c10",
-    date: new Date(2021, 11, 12),
+    date: new Date(2023, 11, 12),
     description: "Стиральная машина",
     price: 900,
   },
@@ -69,7 +69,7 @@ const costs = [
     price: 1000,
   },
   {
-    id: "c11",
+    id: "c12",
     date: new Date(2021, 11, 21),
     description: "Холодильник",
     price: 3000,
@@ -78,9 +78,6 @@ const costs = [
 
 const App = () => {
   const [costList, setCostList] = useState(costs);
-  //const handleAddCost = (cost) => {
-  //  setCostList([...costList, cost]);
-  //};
   const handleAddCost = (cost) => {
     setCostList(previousCosts => {
       return [cost, ...previousCosts]
